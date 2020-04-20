@@ -1,12 +1,8 @@
-# Add  code here!
-def prime?(x)
+def prime?(num)
   i = 2
-  if x > 1
-    k=*((i)..(x/2))
-    k.none? do |r|
-      k % r == 0
-      break
-    end
+  if num > 1
+    range=*((i)..(num-1))
+    range.none? {|k| num % k == 0}
   else
     false
   end
